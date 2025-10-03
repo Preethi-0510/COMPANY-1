@@ -1,0 +1,154 @@
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #e0f7fa;
+  min-height: 100vh;
+  color: #004d40;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #00796b;
+  margin-bottom: 16px;
+}
+
+/* Controls (Search + Filters + Sort) */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.controls input,
+.controls select {
+  padding: 8px 12px;
+  border: 1px solid #004d40;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+}
+
+.controls select {
+  background-color: white;
+  min-width: 160px;
+}
+
+/* User Grid */
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* User Card */
+.user-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.user-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #004d40;
+}
+
+.user-username {
+  font-size: 14px;
+  color: #00796b;
+  margin-bottom: 8px;
+}
+
+.user-info {
+  font-size: 14px;
+  margin-top: 6px;
+  color: #004d40;
+  line-height: 1.5;
+}
+
+.user-info a {
+  color: #f57c00;
+  text-decoration: underline;
+}
+
+.user-info a:hover {
+  color: #e65100;
+}
+
+/* Error Section */
+.error {
+  color: red;
+  margin: 16px 0;
+}
+
+.error button {
+  margin-top: 8px;
+  padding: 6px 12px;
+  background-color: #f57c00;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.error button:hover {
+  background-color: #e65100;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #00796b;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  border: 1px solid #004d40;
+  border-radius: 6px;
+  background-color: white;
+  color: #004d40;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s ease;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #b2dfdb;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination div {
+  padding: 8px 16px;
+  border: 1px solid #004d40;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #004d40;
+  user-select: none;
+}
